@@ -15,7 +15,6 @@ finish-args:
   - --device=dri
   - --socket=wayland
   - --socket=fallback-x11
-  - --socket=x11
   - --share=ipc
   - --env=DOTNET_ROOT=/app/lib/dotnet
 
