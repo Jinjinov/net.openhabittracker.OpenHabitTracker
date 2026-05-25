@@ -17,6 +17,7 @@ finish-args:
   - --socket=fallback-x11
   - --share=ipc
   - --env=DOTNET_ROOT=/app/lib/dotnet
+  - --env=WEBKIT_DISABLE_DMABUF_RENDERER=1
 
 modules:
   - name: dotnet
@@ -29,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Jinjinov/OpenHabitTracker.git
-        tag: 1.2.1
-        commit: 233c4b8410756159e14f31dd7a4e3607efa53749
+        tag: 1.2.2
+        commit: dc9937996f68d9bee832d9ea33d001a84585351e
       - ./nuget-sources.json
     build-options:
       arch:
